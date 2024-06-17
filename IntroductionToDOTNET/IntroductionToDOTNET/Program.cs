@@ -1,4 +1,5 @@
 ﻿//#define CLASS_CONSOLE
+//#define STRINGS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace IntroductionToDOTNET
             Console.WriteLine("Привет .NET");
             Console.ResetColor(); 
 #endif
+
+#if STRINGS
 			Console.Write("Введите Ваше имя: ");
 			string first_name = Console.ReadLine();
 
@@ -45,7 +48,9 @@ namespace IntroductionToDOTNET
 			//Console.WriteLine(string.Format("{0} {1} {2}", last_name, first_name, age));    //String formatting
 
 			//Console.WriteLine($"{last_name} {first_name} {age}");	//Strings interpolation
-			
+
+#endif
+			//object
 		}
 	}
 }
