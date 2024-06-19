@@ -2,6 +2,14 @@ https://github.com/okovtun/PD_311_CS.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
+В Solution 'IntroductionToDOTNET' добавить проект 'Recursion', 
+и в этом проекте написать слежующте рекурсивные методы:
+1. ??? Factorial(???);	// Возвращает Факториал принимаемого числа;
+2. ??? Power(???);		// Возводит указанное число в указанную степень;
+3. ??? Fibonacci(???) выводит на экран ряд Фибоначчи, до указанного предела;
+4. ??? Fibonacci(???) выводит на экран заданное количество чисел из ряда Фибоначчи;
+
+DONE:
 1. В Solution 'IntroductionToDOTNET' добавить проект 'Game', и в нем реализовать игру,
    в которой, при нажатии WASD либо стрело квадратик ездит по экрану;
 2. В Solution 'IntroductionToDOTNET' добавить проект 'Calc', и в нем реализовать
