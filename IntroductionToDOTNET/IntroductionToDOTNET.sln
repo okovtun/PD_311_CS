@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34931.43
+# Visual Studio 15
+VisualStudioVersion = 15.0.34930.48
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToDOTNET", "IntroductionToDOTNET\IntroductionToDOTNET.csproj", "{06EC0546-B809-40F2-B267-241EEDAB1D73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{94C57E7B-9C66-43EF-BB25-30647E6F063D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{211D9765-5E64-4AD4-95F4-DAF179350335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{94C57E7B-9C66-43EF-BB25-30647E6F063D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C57E7B-9C66-43EF-BB25-30647E6F063D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C57E7B-9C66-43EF-BB25-30647E6F063D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211D9765-5E64-4AD4-95F4-DAF179350335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211D9765-5E64-4AD4-95F4-DAF179350335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211D9765-5E64-4AD4-95F4-DAF179350335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211D9765-5E64-4AD4-95F4-DAF179350335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
