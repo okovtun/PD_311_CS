@@ -2,6 +2,13 @@ https://github.com/okovtun/PD_311_CS.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
+1. Изучить программную модель микропроцессора Intel Pentium;
+	3.4 BASIC PROGRAM EXECUTION REGISTERS:	https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+	https://studref.com/389162/informatika/programmnaya_model_mikroprotsessora
+	Стр 40: https://comsys.kpi.ua/katalog/files/navchalniy-posibnik-dlya-vnz.pdf
+2. Для решения задачи 'Factorial' применить "Длинную арифметику";
+
+TODO:
 В Solution 'IntroductionToDOTNET' добавить проект 'Recursion', 
 и в этом проекте написать слежующте рекурсивные методы:
 1. ??? Factorial(???);	// Возвращает Факториал принимаемого числа;
