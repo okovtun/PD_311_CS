@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace Recursion
 {
@@ -24,12 +25,21 @@ namespace Recursion
 			int n = Convert.ToInt32(Console.ReadLine());
 			try
 			{
+				DateTime start = DateTime.Now;
 				Console.WriteLine($"\n-----------------------\n{n}! = {Factorial(n)}");
+				DateTime end = DateTime.Now;
+				TimeSpan duration = end - start;
+				Console.WriteLine($"Duration: {duration.ToString("g")}");
+			}
+			catch (StackOverflowException ex)
+			{
+				Console.WriteLine($"{ex.GetType()}: {ex.Message}");
 			}
 			catch (Exception ex)
 			{
 				Console.WriteLine($"{ex.GetType()}: {ex.Message}");
 			}
+			Console.WriteLine("Calculation DONE");
 		}
 		static void Function()  //Callee - вызываемая функция
 		{
@@ -47,12 +57,25 @@ namespace Recursion
 			Elevator(floor - 1);
 			Console.WriteLine($"Вы на {floor} этаже");
 		}
-		static long Factorial(long n)
+		static BigInteger Factorial(long n)
 		{
-			if (n == 0) return 1;
-			long f = n * Factorial(n - 1);
-			Console.WriteLine($"{n}! = {f}");
+			BigInteger f = 1;
+			for (int i = 1; i < n; i++)
+			{
+				f *= i;
+			}
 			return f;
+			//if (n == 0) return 1;
+			//try
+			//{
+			//	BigInteger f = n * Factorial(n - 1);
+			//	//Console.WriteLine($"{n}! = {f}");
+			//	return f;
+			//}
+			//catch (Exception ex)
+			//{
+			//	throw ex;
+			//}
 		}
 	}
 }

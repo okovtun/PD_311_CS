@@ -2,17 +2,21 @@ https://github.com/okovtun/PD_311_CS.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
+1. Прикрутить скобки к калькулятору. Например: ((22 + 33) * (44 - 55) + 88) / 2;
+
+DONE:
 1. Изучить программную модель микропроцессора Intel Pentium;
 	3.4 BASIC PROGRAM EXECUTION REGISTERS:	https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
 	https://studref.com/389162/informatika/programmnaya_model_mikroprotsessora
 	Стр 40: https://comsys.kpi.ua/katalog/files/navchalniy-posibnik-dlya-vnz.pdf
-2. Для решения задачи 'Factorial' применить "Длинную арифметику";
+2. Для решения задачи 'Factorial' применить "Длинную арифметику";			DONE
 
 TODO:
 В Solution 'IntroductionToDOTNET' добавить проект 'Recursion', 
 и в этом проекте написать слежующте рекурсивные методы:
-1. ??? Factorial(???);	// Возвращает Факториал принимаемого числа;
-2. ??? Power(???);		// Возводит указанное число в указанную степень;
+1. ??? Factorial(???);	// Возвращает Факториал принимаемого числа;			DONE
+2. ??? Power(???);		// Возводит указанное число в указанную степень;	DONE
+	https://github.com/WinterSun01/PD_311_CS/blob/f2ccead98e5c27f675ba00b0782240b050cdffb0/IntroductionToDOTNET/Recursion/Program.cs#L67
 3. ??? Fibonacci(???) выводит на экран ряд Фибоначчи, до указанного предела;
 4. ??? Fibonacci(???) выводит на экран заданное количество чисел из ряда Фибоначчи;
 
