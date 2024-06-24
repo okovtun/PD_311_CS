@@ -22,7 +22,14 @@ namespace Recursion
 
 			Console.Write("Введите число: ");
 			int n = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine($"\n-----------------------\n{n}! = {Factorial(n)}");
+			try
+			{
+				Console.WriteLine($"\n-----------------------\n{n}! = {Factorial(n)}");
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"{ex.GetType()}: {ex.Message}");
+			}
 		}
 		static void Function()  //Callee - вызываемая функция
 		{
@@ -40,10 +47,10 @@ namespace Recursion
 			Elevator(floor - 1);
 			Console.WriteLine($"Вы на {floor} этаже");
 		}
-		static double Factorial(double n)
+		static long Factorial(long n)
 		{
 			if (n == 0) return 1;
-			double f = n * Factorial(n - 1);
+			long f = n * Factorial(n - 1);
 			Console.WriteLine($"{n}! = {f}");
 			return f;
 		}
