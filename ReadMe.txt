@@ -3,6 +3,7 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
 1. Прикрутить скобки к калькулятору. Например: ((22 + 33) * (44 - 55) + 88) / 2;
+2. Написать "Крестикинолики";
 
 DONE:
 1. Изучить программную модель микропроцессора Intel Pentium;
