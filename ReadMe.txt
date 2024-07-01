@@ -2,6 +2,10 @@ https://github.com/okovtun/PD_311_CS.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
+В Solution 'Encapsulation' добавить проект 'Fraction' и в нем реализовать класс 'Fraction', описывающий простую дробь.
+Обеспечить все необходимые операции над дробями.
+
+DONE:
 1. В массиве, заполненном случайными числами, найти следующие значения:
 	-Сумма;
 	-Среднее-арифметическое;
