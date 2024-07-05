@@ -2,6 +2,11 @@ https://github.com/okovtun/PD_311_CS.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIPIZy3n-I9TcjY3-yMBdM2l
 
 TODO:
+1. Код, выводящий группу на экран вынести в метод ??? Print(???);
+2. Код, сохраняющий группу в файл вынести в метод ??? Save(???);
+3. Написать метод ??? Load(???), который загружает группу из файла, в такой же массив, как создан в методе Main();
+
+DONE:
 В Solution 'Encapsulation' добавить проект 'Fraction' и в нем реализовать класс 'Fraction', описывающий простую дробь.
 Обеспечить все необходимые операции над дробями.
 
