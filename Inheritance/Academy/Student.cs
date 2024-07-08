@@ -87,5 +87,13 @@ namespace Academy
         {
             return base.ToStringFile().Replace(';',',')+$"{speciality},{group},{rating},{attendance};";
         }
-    }
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Speciality = values[4];
+			Group = values[5];
+			rating = Convert.ToDouble(values[6]);
+			attendance = Convert.ToDouble(values[7]);
+		}
+	}
 }
