@@ -54,6 +54,7 @@ namespace Academy
 			//Generalization:
 			Human[] group = new Human[]
 				{
+                    new Human("Musk","Elon",50),
 					new Student("Pinkman", "Jessie", 22, "Chemistry", "WW_220", 95, 97),
 					new Teacher("White", "Walter", 50, "Chemistry", 25),
 					new Graduate("Schrader", "Hank", 40, "Criminalistic", "OBN", 80, 70, "How to catch Heizenberg"),
@@ -61,21 +62,28 @@ namespace Academy
 					new Teacher("Diaz", "Ricardo", 50, "Weapons distribution", 20)
 				};
 
-			//Specialization:
-			for (int i = 0; i < group.Length; i++)
-			{
-				Console.WriteLine(group[i].ToString());
-				Console.WriteLine(delimiter);
-			}
-
-			StreamWriter writer = new StreamWriter("group.txt");    //Создаем и открываем поток
-			for (int i = 0; i < group.Length; i++)
-			{
-				writer.WriteLine(group[i]);
-			}
-			writer.Close();
-			string cmd = "group.txt";
-			System.Diagnostics.Process.Start("notepad", cmd);
+            Print(group);
+            Save(group, "group.txt");
 		}
+        static void Print(Human[] group)
+        {
+            //Specialization:
+            for (int i = 0; i < group.Length; i++)
+            {
+                Console.WriteLine(group[i].ToString());
+                Console.WriteLine(delimiter);
+            }
+        }
+        static void Save(Human[] group, string filename)
+        {
+            StreamWriter writer = new StreamWriter("group.txt");    //Создаем и открываем поток
+            for (int i = 0; i < group.Length; i++)
+            {
+                writer.WriteLine(group[i].ToStringFile());
+            }
+            writer.Close();
+            //string cmd = "group.txt";
+            System.Diagnostics.Process.Start("notepad", filename);
+        }
     }
 }

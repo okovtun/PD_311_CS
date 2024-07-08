@@ -50,8 +50,15 @@ namespace Academy
 		public override string ToString()
 		{
 			//string result = $"{GetType()}: ".PadRight(16) + $"{LastName} {FirstName} {Age} y/o";
-			return $"{GetType()}: ".PadRight(18) + $"{LastName.PadRight(LAST_NAME_WIDTH)} {FirstName.PadRight(FIRS_NAME_WIDTH)} {Age.ToString().PadRight(AGE_WIDTH)}";
+			return $"{GetType().ToString().Split('.').Last()}: ".PadRight(12) + $"{LastName.PadRight(LAST_NAME_WIDTH)} {FirstName.PadRight(FIRS_NAME_WIDTH)} {Age.ToString().PadRight(AGE_WIDTH)}";
 			//return base.ToString() + $"{LastName} {FirstName} {Age}";
 		}
+        public virtual string ToStringFile()
+		{
+			//string result = $"{GetType()}: ".PadRight(16) + $"{LastName} {FirstName} {Age} y/o";
+			return $"{GetType().ToString().Split('.').Last()}:" + $"{LastName},{FirstName},{Age.ToString()};";
+			//return base.ToString() + $"{LastName} {FirstName} {Age}";
+		}
+
 	}
 }
