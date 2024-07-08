@@ -63,7 +63,8 @@ namespace Academy
 				};
 
             Print(group);
-            Save(group, "group.txt");
+            Save(group, "group.csv");
+            //CSV - Comma Separated Values (Значения, разделенные запятой)
 		}
         static void Print(Human[] group)
         {
@@ -76,7 +77,7 @@ namespace Academy
         }
         static void Save(Human[] group, string filename)
         {
-            StreamWriter writer = new StreamWriter("group.txt");    //Создаем и открываем поток
+            StreamWriter writer = new StreamWriter(filename);    //Создаем и открываем поток
             for (int i = 0; i < group.Length; i++)
             {
                 writer.WriteLine(group[i].ToStringFile());
@@ -85,5 +86,6 @@ namespace Academy
             //string cmd = "group.txt";
             System.Diagnostics.Process.Start("notepad", filename);
         }
+        
     }
 }
