@@ -21,6 +21,14 @@ namespace AbstractGeometry
 
 			Rectangle rectangle = new Rectangle(100, 80, 200, 100, 5, Color.AliceBlue);
 			rectangle.Info(e);
+
+			Square square = new Square(120, 400, 100, 3, Color.Red);
+			square.Info(e);
+			//square.Width = 200;
+			square.Info(e);
+
+			Circle circle = new Circle(150, 500, 100, 10, System.Drawing.Color.Yellow);
+			circle.Info(e);
 		}
 		[DllImport("kernel32.dll")]
 		public static extern bool GetStdHandle(int nStdHandle);

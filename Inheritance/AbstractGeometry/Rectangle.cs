@@ -15,12 +15,12 @@ namespace AbstractGeometry
 		public double Width
 		{
 			get => width;
-			set => width = value < MIN_SIZE ? MIN_SIZE : value > MAX_SIZE ? MAX_SIZE : value;
+			protected set => width = value < MIN_SIZE ? MIN_SIZE : value > MAX_SIZE ? MAX_SIZE : value;
 		}
 		public double Height
 		{
 			get => height;
-			set => height = value < MIN_SIZE ? MIN_SIZE : value > MAX_SIZE ? MAX_SIZE : value;
+			protected set => height = value < MIN_SIZE ? MIN_SIZE : value > MAX_SIZE ? MAX_SIZE : value;
 		}
 		public Rectangle(double width, double height, int startX, int startY, int lineWidth, Color color)
 			: base(startX, startY, lineWidth, color)
