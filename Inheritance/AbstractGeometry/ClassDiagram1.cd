@@ -21,5 +21,12 @@
       <FileName>Square.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="AbstractGeometry.Circle" Collapsed="true">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAgAAAAAAAAAAAAAAAAEAAAAAEAAAAAA=</HashCode>
+      <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

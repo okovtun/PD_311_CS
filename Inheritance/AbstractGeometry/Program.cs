@@ -29,6 +29,11 @@ namespace AbstractGeometry
 
 			Circle circle = new Circle(150, 500, 100, 10, System.Drawing.Color.Yellow);
 			circle.Info(e);
+
+			//Able, IMovable, IFlyable, IComparable
+			//I....able
+			//Interface - это набор абстрактных методов.
+			//Интерфейсы НЕ наследуют, интерфейсы реализуют.
 		}
 		[DllImport("kernel32.dll")]
 		public static extern bool GetStdHandle(int nStdHandle);
