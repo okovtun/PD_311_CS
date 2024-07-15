@@ -76,7 +76,8 @@ namespace Academy
 #endif
 #if LOAD_FROM_FILE
 			Human[] group2 = Load("group.csv");
-			Print(group2); 
+			Print(group2);
+			Console.WriteLine( (group2[2] as Human).ToString());
 #endif
 		}
 		static void Print(Human[] group)
