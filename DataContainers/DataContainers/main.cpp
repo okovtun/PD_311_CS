@@ -8,3 +8,20 @@
 			правого. Левый потомок всегда содержит значение меньше
 			родителя, а правый - больше родителя;
 */
+
+/*
+	Garbage Collector (сборшик мусора) удаляет объект из памяти, когда нет ни елиной ссылки на этот объект.
+*/
+
+#include<iostream>
+#include<vector>
+#include<set>
+using std::cin;
+using std::cout;
+using std::endl;
+
+void main()
+{
+	std::set<int> container = { 50, 25, 75, 16, 32, 64, 58, 85 };
+	for (int i : container)cout << i << "\t"; cout << endl;
+}
