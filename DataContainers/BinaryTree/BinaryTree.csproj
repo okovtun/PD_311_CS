@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tree.cs" />
+    <Compile Include="UniqurTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

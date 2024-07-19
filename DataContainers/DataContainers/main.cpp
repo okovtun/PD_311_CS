@@ -22,6 +22,6 @@ using std::endl;
 
 void main()
 {
-	std::set<int> container = { 50, 25, 75, 16, 32, 64, 58, 85 };
+	std::set<int> container = { 50, 25, 75, 16, 32, 64, 58, 85, 58, 85, 58, 85, 58, 85 };
 	for (int i : container)cout << i << "\t"; cout << endl;
 }
