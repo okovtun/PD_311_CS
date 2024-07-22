@@ -7,14 +7,14 @@ using System.Diagnostics;
 
 namespace BinaryTree
 {
-	class TreePerformance
+	class TreePerformance<T>
 	{
-		public delegate int Method();
+		public delegate T Method();
 		public static void Measure(string message, Method method)
 		{
 			Stopwatch sw = new Stopwatch();
 			sw.Start();
-			int value = method();
+			T value = method();
 			sw.Stop();
 			Console.WriteLine($"{message}: {value}, вычислено за {sw.Elapsed.TotalMilliseconds} ms");
 		}

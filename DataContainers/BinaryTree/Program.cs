@@ -98,11 +98,11 @@ namespace BinaryTree
 				////Tree tree = new Tree() { 3, 5, 8, 13, 21 }; 
 				#endregion
 
-				TreePerformance.Measure("Минимальное значение в дереве: ", tree.Min);
-				TreePerformance.Measure("Максимальное значение в дереве: ", tree.Max);
-				TreePerformance.Measure("Сумма элементов дерева: ", tree.Sum);
-				TreePerformance.Measure("Количество элементов дерева: ", tree.Count);
-				TreePerformance.Measure("Среднее-арифметическое элементов дерева: ", tree.Avg);
+				TreePerformance<int>.Measure("Минимальное значение в дереве: ", tree.Min);
+				TreePerformance<int>.Measure("Максимальное значение в дереве: ", tree.Max);
+				TreePerformance<int>.Measure("Сумма элементов дерева: ", tree.Sum);
+				TreePerformance<int>.Measure("Количество элементов дерева: ", tree.Count);
+				TreePerformance<double>.Measure("Среднее-арифметическое элементов дерева: ", tree.Avg);
 			}
 			catch (Exception ex)
 			{
