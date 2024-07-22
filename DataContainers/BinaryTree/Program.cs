@@ -103,6 +103,7 @@ namespace BinaryTree
 				TreePerformance<int>.Measure("Сумма элементов дерева: ", tree.Sum);
 				TreePerformance<int>.Measure("Количество элементов дерева: ", tree.Count);
 				TreePerformance<double>.Measure("Среднее-арифметическое элементов дерева: ", tree.Avg);
+				TreePerformance<int>.Measure("Глубина дерева: ", tree.Depth);
 			}
 			catch (Exception ex)
 			{
