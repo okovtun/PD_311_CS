@@ -1,5 +1,6 @@
 ﻿#undef DEBUG
 using System;
+using System.Collections;//!!!!!!!!!!!!!!!!!!!!! https://stackoverflow.com/questions/28314845/using-the-generic-type-system-collections-generic-ienumerablet-requires-1-typ
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace BinaryTree
 {
-	class Tree
+	class Tree:IEnumerator, IEnumerable
+	//CS0305 Using the generic type 'IEnumerator<T>' requires 1 type arguments BinaryTree
+	//https://stackoverflow.com/questions/28314845/using-the-generic-type-system-collections-generic-ienumerablet-requires-1-typ
 	{
 		public class Element
 		{
@@ -39,6 +42,32 @@ namespace BinaryTree
 		{
 			Console.WriteLine($"TDestructor:\t{GetHashCode()}");
 		}
+		public void Add(int Data)
+		{
+			Insert(Data, Root);
+		}
+		public IEnumerator GetEnumerator()
+		{
+			return this;
+		}
+		/// <summary>
+		/// IEnumerator implementation
+		public object Current
+		{
+			get => Root.Data;
+		}
+		public bool MoveNext()
+		{
+			return true;
+		}
+		public void Reset()
+		{
+			
+		}
+		/// </summary>
+		/// <param name="Data"></param>
+		/// 
+
 		public void Insert(int Data)
 		{
 			Insert(Data, Root);
@@ -97,6 +126,21 @@ namespace BinaryTree
 		public double Avg()
 		{
 			return (double)Sum(Root) / Count(Root);
+		}
+		public int Depth()
+		{
+			return Depth(Root);
+		}
+		public int Depth(Element Root)
+		{
+			if (Root == null) return 0;
+			//else return
+			//		Depth(Root.pLeft) + 1 > Depth(Root.pRight) + 1 ?
+			//		Depth(Root.pLeft) + 1 :
+			//		Depth(Root.pRight) + 1;
+			int lDepth = Depth(Root.pLeft) + 1;
+			int rDepth = Depth(Root.pRight) + 1;
+			return Math.Max(lDepth, rDepth);
 		}
 
 		public void Print()
