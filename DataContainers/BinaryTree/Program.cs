@@ -1,5 +1,8 @@
 ﻿//#define TREE_BASE_CHECK
 //#define INITIALIZER_LIST_CHECK
+//#define PERFORMANCE_CHECK
+//#define TREE_PRINT_CHECK
+#define BALANCE_CHECK
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,6 +72,7 @@ namespace BinaryTree
 				Console.WriteLine($"Error: {ex.Message}");
 			}
 #endif
+#if PERFORMANCE_CHECK
 			try
 			{
 				Console.Write("Введите размер дерева: ");
@@ -82,7 +86,7 @@ namespace BinaryTree
 
 				//Изменяем производительность:
 
-				#region Stupid performance measuring
+			#region Stupid performance measuring
 				//Stopwatch sw = new Stopwatch();
 				//Console.Write($"Минимальное значение в дереве: {tree.Min()}");
 				//Console.WriteLine($"Максимальное значение в дереве: {tree.Max()}");
@@ -96,7 +100,7 @@ namespace BinaryTree
 				//Console.WriteLine($", вычислено за {sw.Elapsed} ms");
 				//Console.WriteLine($", вычислено за {sw.Elapsed.TotalMilliseconds} ms");
 				////Tree tree = new Tree() { 3, 5, 8, 13, 21 }; 
-				#endregion
+			#endregion
 
 				TreePerformance<int>.Measure("Минимальное значение в дереве: ", tree.Min);
 				TreePerformance<int>.Measure("Максимальное значение в дереве: ", tree.Max);
@@ -108,7 +112,25 @@ namespace BinaryTree
 			catch (Exception ex)
 			{
 				Console.WriteLine($"Error: {ex.Message}");
-			}
+			} 
+#endif
+#if TREE_PRINT_CHECK
+			Tree tree = new Tree() { 50, 25, 75, 16, 32, 64, 91, 98, 8, 17, 31, 48, 58, 68 };
+			tree.Print();
+			//Console.Write("Введите глубину: ");
+			//int depth = Convert.ToInt32(Console.ReadLine());
+			//tree.Print(depth);
+			tree.TreePrint();
+			tree.Erase(50);
+			tree.TreePrint(); 
+#endif
+
+#if BALANCE_CHECK
+			Tree tree = new Tree() { 144, 89, 144, 89, 144, 89, 144, 89, 55, 34, 21, 13, 8, 5, 3, 8, 5, 3, 8, 5, 3, 8, 5, 3 };
+			tree.TreePrint();
+			tree.Balance();
+			tree.TreePrint(); 
+#endif
 		}
 	}
 }
